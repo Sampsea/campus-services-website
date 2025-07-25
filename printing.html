@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Printing - SCS</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header>
+    <h1>Submit Your Project for Printing</h1>
+    <p>Estimate your cost easily</p>
+  </header>
+
+  <main>
+    <section>
+      <form>
+        <label>Total Number of Pages:</label>
+        <input type="number" id="totalPages" min="1" required>
+
+        <label>Number of Color Pages:</label>
+        <input type="number" id="colorPages" min="0" required>
+
+        <label>Number of Copies:</label>
+        <input type="number" id="copies" min="1" value="1" required>
+
+        <p id="printCost">Estimated Cost: GHS 0.00</p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 Sampsea Campus Services (SCS)
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
