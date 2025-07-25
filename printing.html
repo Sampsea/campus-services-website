@@ -9,12 +9,24 @@
 
   <header>
     <h1>Submit Your Project for Printing</h1>
-    <p>Estimate your cost easily</p>
+    <p>Estimate your cost and upload your file</p>
   </header>
 
   <main>
     <section>
-      <form>
+      <form id="printingForm" enctype="multipart/form-data">
+        <label>Full Name:</label>
+        <input type="text" name="name" required>
+
+        <label>Department:</label>
+        <input type="text" name="department" required>
+
+        <label>Contact Number:</label>
+        <input type="tel" name="contact" required>
+
+        <label>Email Address:</label>
+        <input type="email" name="email" required>
+
         <label>Total Number of Pages:</label>
         <input type="number" id="totalPages" min="1" required>
 
@@ -24,7 +36,12 @@
         <label>Number of Copies:</label>
         <input type="number" id="copies" min="1" value="1" required>
 
+        <label>Upload Your File:</label>
+        <input type="file" name="file" accept=".pdf,.doc,.docx" required>
+
         <p id="printCost">Estimated Cost: GHS 0.00</p>
+
+        <button type="submit">Submit Printing Request</button>
       </form>
     </section>
   </main>

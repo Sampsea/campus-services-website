@@ -14,7 +14,7 @@
 
   <main>
     <section>
-      <form>
+      <form id="tutorialForm">
         <label><input type="checkbox" name="courses" value="Calculus"> Calculus</label><br/>
         <label><input type="checkbox" name="courses" value="Strength of Materials"> Strength of Materials</label><br/>
         <label><input type="checkbox" name="courses" value="Basic/Applied Electronics"> Basic/Applied Electronics</label><br/>
@@ -23,6 +23,20 @@
         <label><input type="checkbox" name="courses" value="Basic Mechanics"> Basic Mechanics</label><br/>
 
         <p id="tutorialTotal">Total Cost: GHS 0.00</p>
+
+        <label>Full Name:</label>
+        <input type="text" name="name" required>
+
+        <label>Department:</label>
+        <input type="text" name="department" required>
+
+        <label>Contact Number:</label>
+        <input type="tel" name="contact" required>
+
+        <label>Email Address:</label>
+        <input type="email" name="email" required>
+
+        <button type="submit">Submit Registration</button>
       </form>
     </section>
   </main>

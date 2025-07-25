@@ -1,4 +1,4 @@
-// Printing cost
+// Printing cost calculator
 const totalPagesInput = document.getElementById('totalPages');
 const colorPagesInput = document.getElementById('colorPages');
 const copiesInput = document.getElementById('copies');
@@ -19,7 +19,12 @@ totalPagesInput?.addEventListener('input', updatePrintCost);
 colorPagesInput?.addEventListener('input', updatePrintCost);
 copiesInput?.addEventListener('input', updatePrintCost);
 
-// Tutorials cost
+document.getElementById('printingForm')?.addEventListener('submit', function(e) {
+  e.preventDefault();
+  alert('✅ Your printing request has been submitted!\nThank you for using SCS.');
+});
+
+// Tutorials cost calculator
 const checkboxes = document.querySelectorAll('input[type="checkbox"]');
 const tutorialTotalEl = document.getElementById('tutorialTotal');
 
@@ -33,4 +38,9 @@ function updateTutorialTotal() {
 
 checkboxes.forEach(box => {
   box.addEventListener('change', updateTutorialTotal);
+});
+
+document.getElementById('tutorialForm')?.addEventListener('submit', function(e) {
+  e.preventDefault();
+  alert('✅ Your tutorial registration has been submitted!\nThank you for using SCS.');
 });
